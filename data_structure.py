@@ -20,4 +20,5 @@ add_data_instance({'name': 'data6', 'time':'tyh','data':'dfcvgjbh'})
 
 print("Data structure current state: {0}".format(data_structure))
 
+add_data_instance({'name': 'data1', 'time':'today','data':'6usfon457jfdsgj'})
 print(data_structure['data1'][0]['data'])

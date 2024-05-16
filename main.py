@@ -122,6 +122,8 @@ resultsframe = ttk.Frame(root, padding="2")
 resultsframe.grid(column=0, row=1, sticky=(N, W))
 detailsframe = ttk.Frame(root, padding="2")
 detailsframe.grid(column=1, row=1, sticky=(N, W))
+canvasFrame = ttk.Frame(root)
+canvasFrame.grid(column=2, row=0, sticky=(N, S, E, W))
 root.columnconfigure(4, weight=1)
 root.rowconfigure(4, weight=1)
 
@@ -184,5 +186,8 @@ if(is_live == False):
 if(is_live == True):
     mid_entry.config(state = 'enabled')
     set_window_title()
+
+canvas = Canvas(canvasFrame, width=500, height=500, background='black')
+canvas.create_line(10, 5, 200, 50)
 
 root.mainloop()
